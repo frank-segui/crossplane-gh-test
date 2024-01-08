@@ -1,0 +1,13 @@
+apiVersion: repo.github.upbound.io/v1alpha1
+kind: RepositoryFile
+metadata:
+  name: crossplane-test-example-1-example1
+spec:
+  forProvider:
+    file: crossplane-files/example1.yml
+    repository: crossplane-test-example-1
+    content: |
+      fileName: example1.yml
+      repo: crossplane-test-example-1
+  providerConfigRef:
+    name: provider-config-github
