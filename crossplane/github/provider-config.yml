@@ -1,0 +1,11 @@
+apiVersion: github.upbound.io/v1beta1
+kind: ProviderConfig
+metadata:
+  name: provider-config-github
+spec:
+  credentials:
+    secretRef:
+      key: ssh-private-key
+      name: provider-config-github-secret
+      namespace: crossplane-system
+    source: Secret
