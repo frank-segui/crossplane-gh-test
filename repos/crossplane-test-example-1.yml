@@ -1,0 +1,12 @@
+apiVersion: repo.github.upbound.io/v1alpha1
+kind: Repository
+metadata:
+  name: crossplane-test-example-1
+spec:
+  forProvider:
+    gitignoreTemplate: VisualStudio
+    visibility: private
+    autoInit: true
+    github_branch_default: main
+  providerConfigRef:
+    name: provider-config-github
