@@ -7,6 +7,5 @@ spec:
     gitignoreTemplate: VisualStudio
     visibility: private
     autoInit: true
-    github_branch_default: main
   providerConfigRef:
     name: provider-config-github
