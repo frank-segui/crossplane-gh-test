@@ -17,6 +17,7 @@ spec:
     helm:
       valueFiles:
       - values.yaml
+      - repos/repo-1.yml
   syncPolicy:
     automated:
       prune: true

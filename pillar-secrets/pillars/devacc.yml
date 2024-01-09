@@ -1,0 +1,4 @@
+pillar: "Developer Acceleration"
+secrets:
+  TEST_COMMON_1: value1
+  TEST_COMMON_2: value2
