@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: repos
+  name: repos-kustomize
   namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
@@ -11,7 +11,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: repos
+    path: repos-kustomize
     repoURL: git@github.com:frank-segui/crossplane-gh-test.git
     targetRevision: HEAD
   syncPolicy:
