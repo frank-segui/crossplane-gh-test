@@ -13,7 +13,7 @@ spec:
   source:
     path: repos-helm
     repoURL: git@github.com:frank-segui/crossplane-gh-test.git
-    targetRevision: 0.1.0
+    targetRevision: HEAD
     helm:
       valueFiles:
       - values.yaml
