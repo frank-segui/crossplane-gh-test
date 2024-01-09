@@ -3,4 +3,6 @@ kind: Kustomization
 resources:
 - crossplane.yml
 - crossplane-config.yml
-- repos.yml
+- repos-kustomize.yml
+- repos-helm-1.yml
+- repos-helm-2.yml
