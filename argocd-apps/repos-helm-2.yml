@@ -18,6 +18,7 @@ spec:
       valueFiles:
       - values.yaml
       - repos/repo-2.yml
+      - pillars/devacc.yml
   syncPolicy:
     automated:
       prune: true
