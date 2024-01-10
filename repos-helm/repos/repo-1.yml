@@ -1,4 +1,4 @@
 pillar: "Developer-Acceleration"
 secrets:
-  TEST1: test1
-  TEST2: test2
+  REPO_1_SECRET_1: REPO_1_SECRET_1
+  REPO_1_SECRET_2: REPO_1_SECRET_2
