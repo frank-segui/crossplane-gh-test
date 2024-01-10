@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    chart: kyverno
+    chart: kyverno/kyverno
     repoURL: https://kyverno.github.io/kyverno
     targetRevision: 3.1.1
     helm:
