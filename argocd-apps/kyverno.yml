@@ -9,10 +9,17 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: kyverno
-    repoURL: git@github.com:frank-segui/crossplane-gh-test.git
-    targetRevision: HEAD
+    chart: kyverno
+    repoURL: https://kyverno.github.io/kyverno
+    targetRevision: 3.1.1
+    helm:
+      values: |
+        crds:
+          install: true
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+      - Replace=true
