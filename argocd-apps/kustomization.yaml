@@ -10,4 +10,4 @@ resources:
 - external-secrets-config.yml
 - kyverno.yml
 - kyverno-config.yml
-- kyverno-policies-crds.yml
+# - kyverno-policies-crds.yml
