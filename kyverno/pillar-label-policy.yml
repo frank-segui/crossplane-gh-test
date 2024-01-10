@@ -1,0 +1,19 @@
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: pillar-label-policy
+spec:
+  validationFailureAction: Enforce
+  rules:
+  - name: require-repository-pillar-label
+    match:
+      any:
+      - resources:
+          kinds:
+          - Repository
+    validate:
+      message: "You must have label `pillar` on all repositories."
+      pattern:
+        metadata:
+          labels:
+            pillar: "*"

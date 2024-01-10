@@ -8,3 +8,5 @@ resources:
 - repos-helm-2.yml
 - external-secrets.yml
 - external-secrets-config.yml
+- kyverno.yml
+- kyverno-config.yml
