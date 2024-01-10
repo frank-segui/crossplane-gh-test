@@ -1,2 +1,3 @@
 setup/argocd/repo-secret.yml
 setup/crossplane/provider-config-github-secret.yml
+setup/external-secrets/gcpsm-secret.yml
