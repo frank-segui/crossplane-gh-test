@@ -6,3 +6,4 @@ resources:
 - repos-kustomize.yml
 - repos-helm-1.yml
 - repos-helm-2.yml
+- external-secrets.yml
