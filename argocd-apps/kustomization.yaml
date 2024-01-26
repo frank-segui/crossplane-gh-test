@@ -10,4 +10,5 @@ resources:
 - external-secrets-config.yml
 - kyverno.yml
 - kyverno-config.yml
+- repos-helm-3.yml
 # - kyverno-policies-crds.yml

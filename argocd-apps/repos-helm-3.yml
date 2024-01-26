@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: repos-helm-3
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: crossplane-system
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: repos-helm
+    repoURL: git@github.com:frank-segui/crossplane-gh-test.git
+    targetRevision: HEAD
+    helm:
+      valueFiles:
+      - values.yaml
+      - repos/repo-3.yml
+      - pillars/devacc.yml
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
