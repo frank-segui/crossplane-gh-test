@@ -4,9 +4,10 @@ metadata:
   name: echo-secret-server
   namespace: apps
 spec:
-  type: LoadBalancer
+  type: NodePort
   ports:
   - port: 3000
     targetPort: 3000
+    nodePort: 30030
   selector:
     app: echo-secret-server
