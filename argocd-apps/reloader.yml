@@ -11,9 +11,9 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    repoURL: 'https://raw.githubusercontent.com'
+    repoURL: https://github.com/stakater/Reloader
     targetRevision: HEAD
-    path: 'stakater/Reloader/master/deployments/kubernetes/reloader.yaml'
+    path: 'deployments/kubernetes'
   syncPolicy:
     automated:
       prune: true
