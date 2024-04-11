@@ -26,11 +26,10 @@ spec:
             secretKeyRef:
               name: super-secret
               key: SUPER_SECRET
-        volumeMounts:
-        - name: secret-volume
-          mountPath: /etc/secrets
-          readOnly: true
-      volumes:
-      - name: secret-volume
-        secret:
-          secretName: super-secret
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
+          limits:
+            memory: "64Mi"
+            cpu: "250m"
