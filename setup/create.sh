@@ -6,4 +6,4 @@ kind create cluster --config $SCRIPT_DIR/kind-cluster.yml
 
 kubectl cluster-info --context kind-test
 
-k config use kind-test 
+kubectl config use kind-test 

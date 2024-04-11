@@ -13,3 +13,4 @@ resources:
 # - repos-helm-3.yml
 # - kyverno-policies-crds.yml
 - echo-secret-server.yml
+- reloader.yml
